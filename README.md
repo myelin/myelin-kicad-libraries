@@ -1,6 +1,6 @@
 # myelin-kicad.pretty
 
-My KiCad footprint library
+My KiCad component library
 
 Copyright (c) 2015 Phillip Pearson
 

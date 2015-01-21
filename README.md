@@ -1,4 +1,4 @@
-# myelin-kicad.pretty
+# myelin-kicad-libraries
 
 My KiCad component library
 

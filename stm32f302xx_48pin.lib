@@ -1,0 +1,67 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# stm32f302xx_48pin
+#
+DEF stm32f302xx_48pin IC 0 40 Y Y 1 F N
+F0 "IC" 175 1925 40 H V L BNN
+F1 "stm32f302xx_48pin" -150 2025 40 H V L BNN
+F2 "NXP_LQFP48_BY_HAND" 150 -1000 30 H V C CIN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ LQFP48
+$ENDFPLIST
+DRAW
+S -750 2100 1425 -1050 0 1 10 f
+X vbat 1 -900 1950 150 R 40 40 1 1 B
+X pc13/wkup2 2 1575 1950 150 L 40 40 1 1 B
+X pc14/osc32_in 3 -900 475 150 R 40 40 1 1 B
+X pc15/osc32_out 4 -900 375 150 R 40 40 1 1 B
+X pf0/osc_in/i2c2_sda 5 -900 675 150 R 40 40 1 1 W
+X pf1/osc_out/i2c2_scl 6 -900 575 150 R 40 40 1 1 I
+X NRST 7 -900 -475 150 R 40 40 1 1 O
+X VSSA/vref- 8 -900 975 150 R 40 40 1 1 B
+X VDDA/vref+ 9 -900 1075 150 R 40 40 1 1 B
+X pa0/wkup1/adc1_in1 10 1575 1800 150 L 40 40 1 1 B
+X pb2 20 1575 800 150 L 40 40 1 1 B
+X pa9/i2c2_scl/usart1_tx 30 1575 -50 150 L 40 40 1 1 B
+X pb4/spi1_miso/spi3_miso 40 1575 -450 150 L 40 40 1 1 B
+X pa1/opamp1_vinp/adc1_in2 11 1575 1700 150 L 40 40 1 1 B
+X pb10/usart3_tx 21 1575 700 150 L 40 40 1 1 B
+X pa10/i2c2_sda/usart1_rx 31 1575 -150 150 L 40 40 1 1 B
+X pb5/spi1_mosi/spi3_mosi 41 1575 -550 150 L 40 40 1 1 B
+X pa2/usart2_tx/spi3_miso/opamp1_vout/adc1_in3 12 1575 1600 150 L 40 40 1 1 B
+X pb11/usart3_rx 22 1575 600 150 L 40 40 1 1 B
+X pa11/USB_DM/can_rx 32 -900 25 150 R 40 40 1 1 B
+X pb6/i2c1_scl/usart1_tx 42 1575 -650 150 L 40 40 1 1 B
+X pa3/usart2_rx/spi3_mosi/opamp1_vinm/adc1_in4 13 1575 1500 150 L 40 40 1 1 B
+X VSS_2 23 -900 1375 150 R 40 40 1 1 B
+X pa12/USB_DP/can_tx 33 -900 -100 150 R 40 40 1 1 B
+X pb7/i2c1_sda/usart1_rx 43 1575 -725 150 L 40 40 1 1 B
+X pa4/dac1_out1/adc2_in1 14 1575 1400 150 L 40 40 1 1 B
+X VDD_2 24 -900 1675 150 R 40 40 1 1 B
+X pa13/SWDIO 34 -900 -575 150 R 40 40 1 1 B
+X BOOT0 44 -900 -375 150 R 40 40 1 1 B
+X pa5/spi1_sck/opamp2_vinm/adc2_in2 15 1575 1300 150 L 40 40 1 1 B
+X pb12 25 1575 450 150 L 40 40 1 1 B
+X VSS_3 35 -900 1275 150 R 40 40 1 1 B
+X pb8/i2c1_scl/can_rx 45 1575 -825 150 L 40 40 1 1 B
+X pa6/spi1_miso/opamp2_vout/adc2_in3 16 1575 1200 150 L 40 40 1 1 B
+X pb13/spi2_sck 26 1575 350 150 L 40 40 1 1 B
+X VDD_3 36 -900 1575 150 R 40 40 1 1 B
+X pb9/i2c1_sda/can_tx 46 1575 -925 150 L 40 40 1 1 B
+X pa7/spi1_mosi/opamp2_vinp/adc2_in4 17 1575 1100 150 L 40 40 1 1 B
+X pb14/spi2_miso 27 1575 250 150 L 40 40 1 1 B
+X pa14/SWCLK 37 -900 -875 150 R 40 40 1 1 B
+X VSS_1 47 -900 1475 150 R 40 40 1 1 B
+X pb0 18 1575 1000 150 L 40 40 1 1 B
+X pb15/spi2_mosi 28 1575 150 150 L 40 40 1 1 B
+X pa15/i2c1_scl/usart2_rx 38 -900 -775 150 R 40 40 1 1 B
+X VDD_1 48 -900 1775 150 R 40 40 1 1 B
+X pb1 19 1575 900 150 L 40 40 1 1 B
+X pa8 29 1575 50 150 L 40 40 1 1 B
+X pb3/SWO/usart2_tx/spi1_sck/spi3_sck 39 -900 -675 150 R 40 40 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -6,7 +6,7 @@ EESchema-LIBRARY Version 2.3
 DEF stm32f103c8t6-module-china U 0 40 Y Y 1 F N
 F0 "U" 0 1350 60 H V C CNN
 F1 "stm32f103c8t6-module-china" 0 0 60 V V C CNN
-F2 "" -400 250 60 H V C CNN
+F2 "myelin-kicad:stm32f103c8t6-module-china" 0 -1700 60 H I C CNN
 F3 "" -400 250 60 H V C CNN
 DRAW
 T 900 100 -500 60 0 0 0 B5,~C13-15,~A0-7,~B0-1~are~not~5V~tolerant  Normal 0 C C

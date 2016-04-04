@@ -4,14 +4,22 @@ HEADER = """EESchema-LIBRARY Version 2.3
 #encoding utf-8
 """
 
+FOOTER = """#
+#End Library"""
+
 class Part:
     def __init__(self, name, lines):
         self.name = name
         self.lines = lines
     def dumps(self):
-        return "\n".join(self.lines)
+        return "#\n# %s\n#\n%s" % (
+            self.name,
+            "\n".join(self.lines),
+        )
     def __eq__(self, o):
         return self.name == o.name and self.lines == o.lines
+    def sanitized_name(self):
+        return self.name.lower().replace("/", "-")
 
 class Library:
     def __init__(self, fn=None):
@@ -30,13 +38,7 @@ class Library:
         name = re.search("^DEF ([^ ]+) ", lines[0]).group(1)
         self[name] = Part(name, lines)
     def dumps(self):
-        return HEADER + "\n".join(
-            "#\n# %s\n#\n%s" % (
-                name,
-                part.dumps(),
-            ) for name, part in sorted(self.items())
-        )
-
+        return HEADER + "\n".join(part.dumps() for name, part in sorted(self.items())) + "\n" + FOOTER
 
 def read(fn):
     print>>sys.stderr, "reading %s" % fn

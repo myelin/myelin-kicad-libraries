@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP acorn_electron_expansion_connector
+D Socket that connects to the Acorn Electron rear expansion port
+$ENDCMP
+#
+#End Doc Library

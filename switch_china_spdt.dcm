@@ -1,8 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP switch_china_spdt
-D Switch inverseur
-K switch
-$ENDCMP
-#
-#End Doc Library
